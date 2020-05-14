@@ -1,5 +1,7 @@
-FROM python:latest
+FROM ubuntu 
 
-COPY main.py /
-
-CMD [ "python", "./main.py" ]
+RUN apt-get update && apt-get install -y tree
+RUN touch rohit.txt
+RUN touch rohit1.txt
+RUN touch rohit2.txt
+RUN touch rohit3.txt
