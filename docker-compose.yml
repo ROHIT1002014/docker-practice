@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: rkverma96/django:latest
+    entrypoint: env/dev/docker-entrypoint.sh
+    ports:
+      - "8000:8000"
+    volumes:
+    - .:/code/
+    working_dir: /code
